@@ -74,3 +74,9 @@ character_set_server=utf8
 init_connect='SET NAMES utf8'
 ```
 
+#7.常用命令
+```
+systemctl start mysqlId #启动
+systemctl stop mysqlId #停止
+systemctl restart mysqlId #重启
+```

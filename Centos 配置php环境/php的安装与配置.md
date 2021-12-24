@@ -31,3 +31,15 @@ systemctl start php-fpm
 ```
 ps -ef | grep php
 ```
+
+#6.常用命令
+```
+systemctl start php-fpm #启动
+systemctl stop php-fpm #停止
+systemctl restart php-fpm #重启
+```
+
+#7.java LNMP 环境
+```
+OneinStack
+```

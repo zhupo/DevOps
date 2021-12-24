@@ -59,3 +59,39 @@ server {
         }
     }
 ```
+#9.反向代理
+```
+server {
+        listen       80;
+        server_name  xx.xxx.xxx.xxx; # 你的域名
+        root /var/www/fiim-copy/film/dist; 
+        index index.html index.htm index.php;
+        location / {
+            try_files $uri $uri/ /index.php?$args;
+            #index index.php;
+        }
+
+       location /api/ {
+                proxy_next_upstream http_502 http_504 error timeout invalid_header;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://xx.xxx.xxx.xxx:8081/api/;
+                if ($upstream_http_access_control_allow_origin = false) {       
+                        add_header 'Access-Control-Allow-Origin' '*';
+                }
+                add_header 'Access-Control-Allow-Headers' '*';
+                add_header 'Access-Control-Allow-Methods' '*';
+        }
+      }
+```
+#10. 关闭防火墙 & 禁止开机启动
+```
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+```
+#11. 知乎：
+```
+https://zhuanlan.zhihu.com/p/26551408
+https://zhuanlan.zhihu.com/p/92421604
+```
