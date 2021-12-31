@@ -1,6 +1,7 @@
 #1, 安装教程
 ```
 https://www.cnblogs.com/stulzq/p/9286878.html
+https://github.com/youxiang-yx/blog/blob/main/linux/Linux%E5%AE%89%E8%A3%85java.md
 ```
 #2, JAVA下载地址
 ```
