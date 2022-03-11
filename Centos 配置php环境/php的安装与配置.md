@@ -1,3 +1,9 @@
+#安装宝塔面板： 
+```
+https://developer.aliyun.com/ask/233242
+https://www.zjszjs.com/notes/81.html
+```
+
 #1.安装php 和php-fpm
 # #首先安装epel
 ```
