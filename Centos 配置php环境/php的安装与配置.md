@@ -2,6 +2,7 @@
 ```
 https://developer.aliyun.com/ask/233242
 https://www.zjszjs.com/notes/81.html
+http://tencent.yundashi168.com/327.html?spm=a2c6h.13066369.0.0.4e5679c6krIx7d&userCode=28kqeewo
 ```
 
 #1.安装php 和php-fpm
