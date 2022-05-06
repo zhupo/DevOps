@@ -91,3 +91,7 @@ git remote -v
 git pull
 git fetch
 ```
+# Git 删除多个分支:
+```
+Git 删除本地除master分支外所有分支：git branch | grep -v "master" | xargs git branch -D
+```
