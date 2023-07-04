@@ -84,7 +84,7 @@ g, 将GitHub SSH仓库地址中的git@github.com替换成新建的Host别名。
 old: git@github.com:zhupo/DevOps.git
 new: github-zhupo:zhupo/DevOps.git
 
-git remote set-url github-zhupo:zhupo/DevOps.git
+git remote set-url origin github-zhupo:zhupo/DevOps.git
 
 check:
 git remote -v
